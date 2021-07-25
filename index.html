@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Dynamic Parser JSON</title>
   </head>
   <body>
@@ -14,13 +14,13 @@
       enctype="multipart/form-data"
       method="post"
     >
-      <p>Загрузите ваш JSON на сервер</p>
+      <h1>Загрузите ваш JSON на сервер</h1>
       <p>
-        <input type="file" onchange="readFile(this)" name="downloadJson" />
-        <input type="reset" value="Сбросить" />
+        <input type="file" onchange="readFile(this)" />
+        <input type="reset" value="Сбросить" id="resetBtn" />
       </p>
     </form>
-
+    <div class="content" id="content_box"></div>
     <script src="parser.js"></script>
   </body>
 </html>
